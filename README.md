@@ -34,6 +34,17 @@ Para realizar uma requisição, é necessário ter acesso a outro terminal local
 curl -X POST -H "Content-Type: application/json" -d '{"shop_id": 55, "item_id": 10585}' http://0.0.0.0:5000/predict
 ```
 
+Neste exemplo, o terminal deve mostrar:
+```
+{
+  "item_id": "10585",
+  "prediction": "1.0",
+  "shop_id": "55"
+}
+```
+
+A previsão de vendas é de 1 unidade para esse produto e loja no mês de novembro de 2015
+
 ### Requisitos do projeto completo:
   - flask 3.0.3
   - pandas 2.2.2
