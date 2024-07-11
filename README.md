@@ -2,21 +2,21 @@
 
 ## Entendendo o objetivo e o problema de negócio
 
-A partir de dados históricos diários de vendas de lojas e produtos, devemos prever o total de produtos vendidos em cada loja para o conjunto de teste.
+A partir de dados históricos diários de vendas de lojas e produtos, devemos prever o total de produtos vendidos em cada loja e item para o conjunto de teste.
 
-O notebook [test-eda.ipynb](test-eda.ipynb) mostra os principais insights do banco de dados de treino, o tratamento necessário dos dados e os seguintes passos a seguir antes da criar o API Flask.
+O notebook [test-eda.ipynb](test-eda.ipynb) mostra os principais insights do banco de dados de treino, o tratamento necessário dos dados e os seguintes passos a seguir antes de criar o API Flask.
 
 ### Seleção de características e modelo de regressão
 
-Visto que os dados de vendas seguem uma serie temporal, consideramos que uma forma apropriada de tratar o problema é mediante a criação de "lag features".
+Visto que os dados de vendas seguem uma série temporal, consideramos que uma forma apropriada de tratar o problema é mediante a criação de "lag features".
 
-O Modelo de regressão utilizado foi o XGboost dada a sua alta performance, tanto no tempo de execução quanto a sua corretude. 
+O modelo de regressão utilizado foi o XGboost dada a sua alta performance, tanto no tempo de execução quanto na corretude. Além disso, um modelo baseado em árvore de decisão é uma escolha interessante visto que temos um dataset estruturado e algumas features categóricas.
 
 ### Validação e persistência do modelo
 
-Utilizamos uma validação em splits consecutivos no tempo porque queremos treinar dados do pasado para preveer dados do futuro.
+Utilizamos uma validação em splits consecutivos no tempo porque queremos treinar dados do passado para prever dados do futuro.
 
-A persistência do modelo foi implementado mediante pickle. Foram salvos tanto o modelo quanto os dados dos features adicionais criados.
+A persistência do modelo foi implementada mediante pickle. Foram salvos tanto o modelo quanto os dados dos features adicionais criados.
 
 ## Uso de API Flask e Docker
 
