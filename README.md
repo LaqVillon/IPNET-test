@@ -43,7 +43,7 @@ Neste exemplo, o terminal deve mostrar:
 }
 ```
 
-A previsão de vendas é de 1 unidade para esse produto e loja no mês de novembro de 2015
+A previsão de vendas é de 1 unidade para esse produto e loja no mês de novembro de 2015.
 
 ### Requisitos do projeto completo:
   - flask 3.0.3
