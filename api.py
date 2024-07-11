@@ -24,7 +24,7 @@ def predict():
         if 'shop_id' not in request.json or 'item_id' not in request.json:
             raise KeyError('shop_id and item_id are required')
 
-        # Obteendo e validando shop_id e item_id
+        # Obtendo e validando shop_id e item_id
         shop_id = int(request.json['shop_id'])
         item_id = int(request.json['item_id'])
         if not (0 <= shop_id <= 59) or not (0 <= item_id <= 22169):

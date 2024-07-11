@@ -2,9 +2,9 @@
 
 ## Entendendo o objetivo e o problema de negócio
 
-A partir de dados históricos diários de vendas de lojas e produtos, devemos prever o total de produtos vendidos em cada loja para o conjunto de testes.
+A partir de dados históricos diários de vendas de lojas e produtos, devemos prever o total de produtos vendidos em cada loja para o conjunto de teste.
 
-O notebook [test-eda.ipynb](test-eda.ipynb) mostra os principais insights, o tratamento necessário dos dados e os seguintes passos a seguir antes da criar o API Flask.
+O notebook [test-eda.ipynb](test-eda.ipynb) mostra os principais insights do banco de dados de treino, o tratamento necessário dos dados e os seguintes passos a seguir antes da criar o API Flask.
 
 ### Seleção de características e modelo de regressão
 
