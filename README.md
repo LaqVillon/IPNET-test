@@ -20,7 +20,7 @@ A persistência do modelo foi implementada mediante pickle. Foram salvos tanto o
 
 ## Uso de API Flask e Docker
 
-Para usar o modelo criado em ambiente produção, implementamos um API Flask no arquivo [api.py](api.py). 
+Para usar o modelo criado em ambiente produção, implementamos um API Flask no script [api.py](api.py). 
 
 Criamos e rodamos o container por meio do comando:
 
